@@ -1,0 +1,26 @@
+<script type="text/javascript" src="/Library/js/commandFunc.js"></script>
+
+<div class="masthead">
+	<form name="librarian_header" action="LibraryController" method="post">
+	<input type="hidden" name="command"/>
+	<ul class="nav nav-pills pull-right">
+		<li>
+			<a href="#" onclick="setCommand(librarian_header, 'catalog'); return false">
+			<fmt:message key="label.catalog"/>
+			</a>
+		</li>
+		<li>
+			<a href="#" onclick="setCommand(librarian_header, 'clients'); return false">
+			<fmt:message key="label.clients" />
+			</a>
+		</li>
+		<li>
+			<a href="#" onclick="setCommand(librarian_header, 'logout'); return false">
+			<fmt:message key="label.exit" />
+			</a>
+		</li>
+	</ul>
+	<h3 class="muted">E-Library</h3>
+	<hr>
+	</form>
+</div>
