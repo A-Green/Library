@@ -1,0 +1,392 @@
+* {
+    margin: 0;
+}
+
+html, body {
+    height: 100%;
+}
+
+.page-wrap {
+    min-height: 100%;
+    height: 100%;
+    /* equal to footer height */
+    margin-bottom: -40px;
+    box-sizing: border-box;
+    width: 70%;
+    margin-left: 15%;
+}
+
+#header {
+    height: 53px;
+    width: 100%;
+    padding-bottom: 10px;
+    
+    padding-left: 10px;
+    padding-top: 10px;
+    box-sizing: border-box;
+    border: 1px solid #C3C3C3;
+    position: inherit;
+}
+
+#header_title {
+    color: cornflowerblue;
+    font: bold 21px Arial;
+}
+
+.lang-widget {
+    position: absolute;
+    top: 2%;
+    right:  16%;
+    font: bold 16px Arial;
+    float: right;
+}
+
+/* MENU */
+
+#menu {
+    width: 25%;
+    float: left;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #C3C3C3;
+/*     min-height: 90%; */
+    height: 100%
+}
+.nav-menu {
+	margin-bottom: 20px;
+}
+
+.tags-menu, .authors-menu {
+	margin-bottom: 20px;
+}
+
+.tags-menu, .authors-menu > ul {
+	max-height: 300px;
+	overflow: auto;
+}
+
+#nav-menu-title, 
+#tags-menu-title, 
+#authors-menu-title, 
+#news-group-menu-title {
+
+    text-align: center;
+    margin: 0px 0px 3px 5px;
+    background-color: darkgrey;
+    color: #FFF;
+}
+
+.news-group-menu {
+	margin-top: 40px;
+}
+
+#nav-menu-links {
+
+}
+
+.select-menu {
+	margin-top: 30px;
+	width: 100%
+}
+
+select {
+	width: 97%;
+	margin-left: 5px;
+}
+
+#content-wrapper {
+	height: 90%;
+	box-sizing: border-box;
+    border: 1px solid #C3C3C3;
+}
+
+#content {
+    width: 75%;
+    float: left;
+    padding: 10px;
+    padding-bottom: 5px;
+    box-sizing: border-box;
+    min-height: 100%;
+    position: relative;
+    height: 100%;
+
+}
+/* NEWS MESSAGE */
+
+#news-messages-wrapper {
+	height: 90%;
+}
+
+.news-message {
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #C3C3C3;
+    min-height: 150px;
+    height: 150px;
+    overflow: hidden;
+}
+
+.news-message-title {
+
+    font: bold 21px Arial;
+    margin-bottom: 10px;
+    position: relative;
+    min-height: 30%;
+    max-height: 30%;
+    overflow: hidden;
+}
+
+.news-message-brief {
+    font: 15px/18px Arial;
+    position: relative;
+    height: 50%;
+    min-height: 50%;
+    overflow: hidden;
+}
+
+.news-message-links {
+    /*display: inline-block;*/
+    position: relative;
+    float: right;
+    /*     bottom: 5px; */
+    font: 16px Arial ;
+}
+
+.news-message-links a {
+	margin-left: 10px;
+}
+
+.news-message-date {
+    position: relative;
+    float: right;
+}
+
+/* EDITING TABLE */
+
+.edit-news-table {
+    position: relative;
+    width: 100%;
+    padding: 10px;
+    padding-top: 30px;
+}
+
+.table-header {
+    width: 15%;
+}
+
+.table-content {
+    text-align: left;
+    width: 85%;
+}
+table.edit-news-table tr td {
+    padding-bottom: 20px;
+}
+
+.table-buttons-wrapper {
+    text-align: center;
+}
+
+.table-edit-btn {
+    display: inline-block;
+    width: 80px;
+    height: 30px;
+    margin-left: 10px;
+}
+
+.page-wrap:after {
+    content: "";
+    display: block;
+}
+
+.site-footer, .page-wrap:after {
+    /* .push must be the same height as footer */
+    height: 40px;
+}
+
+#site-footer {
+    clear: both;
+    text-align: center;
+    font: 15px Arial;
+    box-sizing: border-box;
+    border: 1px solid #C3C3C3;
+    padding: 10px;
+    width: 70%;
+    margin-left: 15%;
+}
+
+textarea {
+    position: relative;
+    width: 100%;
+    text-align: left;
+    resize: none;
+}
+
+.news-view {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 60%;
+    min-height: 60%;
+/*     padding-left: 10px; */
+}
+
+#title {
+    position:  relative;
+    max-height: 20%;
+    font: bold 21px Arial;
+    overflow: auto;
+    padding-top: 15px;
+    padding-bottom: 10px;
+    }
+
+#brief {
+    position:  relative;
+    max-height: 20%;
+    overflow: auto;
+    font: 21px Arial;
+    padding-bottom: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+#content-news {
+    position:  relative;
+    min-height: 60%;
+    max-height: 60%;
+    height: 60%;
+    overflow: auto;
+}
+
+.comments-area {
+    position: relative;
+    height: 35%;
+    margin-top: 5px;
+    width: 100%
+}
+
+#news-tags {
+    position: relative;
+    text-align: right;
+    margin-top: 5px;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+}
+
+#comment-area {
+    position: relative;
+    padding-top: 0px;
+    margin-top: 0px;
+    height: 20%;
+}
+
+#comments-wrapper {
+    position: relative;
+    height: 50%;
+    min-height: 50%;
+}
+
+.comment {
+    padding-top: 10px;
+    position: relative;
+    margin: 10px;
+/*     border: 1px solid #C3C3C3; */
+}
+
+/* #content > .comment { */
+/* 	    border: 1px solid #C3C3C3; */
+/* 	    box-sizing: border-box; */
+/* } */
+
+.comment-button {
+	margin-top: 10px;
+}
+
+.comment-date {
+
+}
+
+.comment-text {
+	position: relative;
+	display: inline-block;
+}
+
+.news-comment-links {
+	text-align:  right;
+}
+
+.paging-area {
+	height : 10%;
+    position: relative;
+}
+
+.slider {
+	margin-top: 35px;
+	position: relative;
+	font-family: Georgia;
+	font-size: 14px;
+	}
+.slider-header {
+	position: relative;
+	border: 2px solid #3F3F3F;
+	padding: 8px;
+	font-weight: bold;
+	margin-top: 5px;
+	cursor: pointer;
+	text-align: center;
+	}
+.slider-header:hover {
+/* 	background: url(images/header_over.png); */
+	color: #B7B7B7;
+	}
+.slider-content {
+	position: relative;
+	}
+.slider-text {
+	width: 474px;
+	border: 2px solid #3F3F3F;
+	border-top: none;
+	padding: 15px;
+	text-align: left;
+	background: #7F7F7F;
+	}
+	
+.extended-comments-view {
+	position: relative;
+	height: 90%;
+	min-height: 90%;
+	box-sizing: border-box;
+	border: 1px solid #C3C3C3; 
+}
+
+.modal-wrapper {
+	position: relative;
+	min-height: 80%;
+}
+.add-tag-wrapper, .add-author-wrapper {
+	margin-top: 10px;
+}
+
+#tagField, #authorField, .add-btn {
+	position: relative;
+	float:right;
+}
+
+.error-message {
+	font: bold 25px Arial;
+	text-align: center;
+	color: red;
+	margin-top: 10px;
+	margin-bottom: 30px;
+}
+
+.return-link {
+	font: bold 21px Arial;
+	text-align: center;
+	margin-top: 10px;
+	margin-bottom: 30px;
+}
+
+#tags-content, #authors-content {
+	max-height: 250px;
+	overflow: auto;
+}

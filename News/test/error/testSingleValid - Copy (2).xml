@@ -1,0 +1,15 @@
+<newsMessages>
+	<news>
+		<title>Single valid news</title>
+		<brief>brief</brief>
+		<content>This is valid news</content>
+		<tags>
+			<tag>java</tag>
+			<tag>IT</tag>
+		</tags>
+		<authors>
+			<author>Author1</author>
+			<author>Author2</author>
+		</authors>
+	</news>
+</newsMessages>

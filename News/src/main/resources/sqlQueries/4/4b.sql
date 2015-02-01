@@ -1,0 +1,12 @@
+SELECT NEWS,
+  TITLE,
+  TAG_LIST
+FROM(
+  (SELECT NEWS,
+    RTRIM(XMLAGG(XMLELEMENT(e, tag || '__,')).extract('//text()') ,'__,') TAG_LIST
+  FROM NEWS_TAG
+  GROUP BY NEWS
+  )
+JOIN NEWS
+ON NEWS = NEWS_ID )
+ORDER BY news;
